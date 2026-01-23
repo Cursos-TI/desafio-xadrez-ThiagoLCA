@@ -15,13 +15,14 @@ int main() {
     int MOVTORRE = 5;
     int MOVBISPO = 5;
     int MOVRAINHA = 8;
+    int MOVCAVALO = 1;
 
     int i;
 
     // TORRE → FOR
     // Move 5 casas para a direita
   
-    printf("Movimentacao da Torre:\n");
+    printf("*** Movimentacao da Torre ***:\n\n");
     for (i = 1; i <= MOVTORRE; i++) 
     {
         printf("Casa %d: Direita\n\n", i);
@@ -31,7 +32,7 @@ int main() {
     // BISPO → WHILE
     // Move 5 casas na diagonal (Cima + Direita)
    
-    printf("Movimentacao do Bispo:\n");
+    printf("*** Movimentacao do Bispo ***:\n\n");
     i = 1;
     while (i <= MOVBISPO) 
     {
@@ -43,13 +44,25 @@ int main() {
     // RAINHA → DO WHILE
     // Move 8 casas para a esquerda
 
-    printf("Movimentacao da Rainha:\n");
+    printf("*** Movimentacao da Rainha ***:\n\n");
     i = 1;
     do {
         printf("Casa %d: Esquerda\n\n", i);
         i++;
     } while (i <= MOVRAINHA);
 
+    // CAVALO → WHILE E FOR
+    // Move 2 casas para Cima e 1 casa pra esquerda
+
+    printf ("Movimento do Cavalo: \n\n");
+    while (MOVCAVALO --)
+    {
+        for (int i = 0; i < 2; i++)
+    {
+        printf ("Cima \n", i);
+    }
+        printf ("Esquerda \n", i);
+}
     return 0;
 }
     // Implementação de Movimentação do Bispo
